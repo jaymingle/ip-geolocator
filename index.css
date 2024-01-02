@@ -1,5 +1,5 @@
 *{
-    font-family: "Helvetica Neue";
+    font-family: "Trebuchet MS";
 }
 
 body{
@@ -11,4 +11,53 @@ body{
     height: 90vh;
     width: 60%;
     margin: 0 auto;
+}
+
+.inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.getIpAddress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.getIpAddress button{
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.fullIPData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.ipData input{
+    width: 250px;
+    height: 30px;
+    padding: 0 10px;
+}
+
+.ipData button{
+    height: 34px;
+    width: 100px;
+}
+
+.ipData{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
