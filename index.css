@@ -1,0 +1,14 @@
+*{
+    font-family: "Helvetica Neue";
+}
+
+body{
+    background-color: black;
+}
+
+.outer{
+    background-color: white;
+    height: 90vh;
+    width: 60%;
+    margin: 0 auto;
+}
