@@ -8,6 +8,7 @@ function getIPAddress(){
             }
             return response.json()
         })
-        .then(data => console.log(data))
+        // .then(data => console.log(data))
+        .then(data => ip = data)
         .catch(err => console.log(err))
 }
