@@ -1,2 +1,1 @@
-console.log("Gh" +
-    "ana")
+console.log("Ghana")
