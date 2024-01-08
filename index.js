@@ -11,6 +11,8 @@ function getIPAddress(){
         // .then(data => console.log(data))
         .then(data => ip = data)
         .catch(err => console.log(err))
+
+    console.log(ip)
 }
 
 console.log(ip)
