@@ -13,6 +13,19 @@ function getIPAddress(){
     //     .catch(err => console.log(err))
     //
     // console.log(ip)
+
+
+    fetch("http://www.omdbapi.com/")
+        .then(response => {
+            if(!response.ok){
+                throw new Error("Could not fetch data")
+            }
+
+            return response.json()
+        })
+        .then(data => console.log(data))
+        .catch(err => console.log("Error Fetching data: " + err))
+
 }
 
 console.log(ip)
