@@ -9,7 +9,9 @@ function getIPAddress(){
             return response.json()
         })
         .then(data => {
-            console.log(data)
+            let theIP = data.ip
+            console.log(theIP)
+            // document.querySelector("#ipAddressShow").innerHTML = data.ip
         })
         .catch(err => console.log(err))
 
