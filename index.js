@@ -16,3 +16,7 @@ function getIPAddress(){
         })
         .catch(err => console.log(err))
 }
+
+let theGotIP = getIPAddress();
+
+//154.160.20.89
