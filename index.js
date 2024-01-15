@@ -1,7 +1,7 @@
 
-let theIP
+let theIP = ""
 
-function getIPAddress(){
+function getIPAddress(callback){
     fetch("https://api.ipify.org?format=json")
         .then(response => {
             if(!response.ok){
@@ -14,15 +14,18 @@ function getIPAddress(){
             let ipElement = document.querySelector("#ipAddressShow");
             ipElement.innerHTML = theIP
             console.log(theIP)
-            return theIP
+            callback(theIP)
         })
         .catch(err => console.log(err))
 }
 
-// console.log("Outside: ",theIP)
+getIPAddress(ip=>{
+    console.log("Outside IP Address", ip)
+})
 
-let theValue = getIPAddress()
-console.log(theValue)
+// console.log("Outside: ",theIP)
+// let theValue = getIPAddress()
+// console.log(theValue)
 
 // let theMain = getIPAddress();
 // let theGotIP = "Kwame";
