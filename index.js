@@ -1,4 +1,4 @@
-let ip = ""
+let ip;
 
 function getIPAddress(){
     fetch("https://api.ipify.org?format=json")
@@ -15,6 +15,8 @@ function getIPAddress(){
             let ipElement = document.querySelector("#ipAddressShow");
             console.log(ipElement)
             ipElement.innerHTML = theIP
+
+            ip = theIP
         })
         .catch(err => console.log(err))
 
