@@ -19,9 +19,13 @@ function getIPAddress(callback){
         .catch(err => console.log(err))
 }
 
+let ourIP
 getIPAddress(ip=>{
+    ourIP = ip
     console.log("Outside IP Address", ip)
 })
+
+console.log("Herh Our", ourIP)
 
 // console.log("Outside: ",theIP)
 // let theValue = getIPAddress()
