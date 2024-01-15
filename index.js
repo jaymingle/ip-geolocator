@@ -25,8 +25,6 @@ getIPAddress(ip=>{
     console.log("Outside IP Address", ip)
 })
 
-console.log("Herh Our", ourIP)
-
 // console.log("Outside: ",theIP)
 // let theValue = getIPAddress()
 // console.log(theValue)
