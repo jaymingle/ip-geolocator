@@ -12,10 +12,7 @@ function getIPAddress(){
             let ipElement = document.querySelector("#ipAddressShow");
             console.log(ipElement)
             ipElement.innerHTML = theIP
+            return theIP
         })
         .catch(err => console.log(err))
-
-    console.log(ip)
 }
-
-console.log(ip)
