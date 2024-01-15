@@ -1,4 +1,6 @@
 
+let theIP
+
 function getIPAddress(){
     fetch("https://api.ipify.org?format=json")
         .then(response => {
@@ -8,16 +10,17 @@ function getIPAddress(){
             return response.json()
         })
         .then(data => {
-            let theIP = data.ip
+            theIP = data.ip
             let ipElement = document.querySelector("#ipAddressShow");
-            console.log(ipElement)
             ipElement.innerHTML = theIP
+            console.log(theIP)
             return theIP
         })
         .catch(err => console.log(err))
 }
 
-let theGotIP = getIPAddress();
-console.log(theGotIP)
-
+// let theMain = getIPAddress();
+// let theGotIP = "Kwame";
+// console.log(theGotIP)
+// console.log(theMain)
 //154.160.20.89
