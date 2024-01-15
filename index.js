@@ -19,6 +19,11 @@ function getIPAddress(){
         .catch(err => console.log(err))
 }
 
+// console.log("Outside: ",theIP)
+
+let theValue = getIPAddress()
+console.log(theValue)
+
 // let theMain = getIPAddress();
 // let theGotIP = "Kwame";
 // console.log(theGotIP)
