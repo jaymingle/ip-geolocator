@@ -11,7 +11,9 @@ function getIPAddress(){
         .then(data => {
             let theIP = data.ip
             console.log(theIP)
-            // document.querySelector("#ipAddressShow").innerHTML = data.ip
+
+            let ipElement = document.querySelector("#ipAddressShow");
+            console.log(ipElement)
         })
         .catch(err => console.log(err))
 
