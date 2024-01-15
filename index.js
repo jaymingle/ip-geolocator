@@ -18,5 +18,6 @@ function getIPAddress(){
 }
 
 let theGotIP = getIPAddress();
+console.log(theGotIP)
 
 //154.160.20.89
